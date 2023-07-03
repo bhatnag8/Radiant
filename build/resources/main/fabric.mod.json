@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "radiant",
+	"version": "1.0.0",
+	"name": "Radiant",
+	"description": "Chest and Barrels",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/radiant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "bhatnag8.radiant.Radiant"
+		],
+		"client": [
+			"bhatnag8.radiant.RadiantClient"
+		],
+		"fabric-datagen": [
+			"bhatnag8.radiant.RadiantDataGenerator"
+		]
+	},
+	"mixins": [
+		"radiant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
